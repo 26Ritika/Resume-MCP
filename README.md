@@ -53,22 +53,3 @@ Restart Claude Desktop. You should now be able to ask things like:
 
 Claude will call `match_score` and `generate_gap_chart_tool` automatically.
 
-## Extending
-
-- Add more skills to `SKILL_VOCAB` in `matcher.py` for better keyword coverage
-- Swap `all-MiniLM-L6-v2` for a larger embedding model for better accuracy
-  (tradeoff: slower, bigger download)
-- Add a `parse_resume_pdf` tool using a PDF library to read resumes directly
-  from file instead of pasted text
-
-## Project Structure
-
-```
-resume-mcp/
-├── server.py           # MCP server + tool definitions
-├── matcher.py           # Embedding + skill matching logic
-├── chart_generator.py   # Visual chart generation
-├── test_local.py        # Local test script (no MCP needed)
-├── requirements.txt
-└── output/               # Generated charts saved here
-```
