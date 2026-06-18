@@ -1,4 +1,4 @@
-# Resume-JD Match MCP Server
+# Resume MCP Server
 
 An MCP server that compares your resume against a job description using
 sentence embeddings (semantic similarity) + skill keyword matching, and
